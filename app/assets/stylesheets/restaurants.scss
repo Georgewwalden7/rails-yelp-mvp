@@ -1,7 +1,45 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: rgb(220, 220, 220)
+}
 
 .large {
-  font-size: 50px;
+  font-size: 40px;
+}
+
+.restaurant_container {
+  text-align: center;
+}
+
+.restaurants_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0 20px;
+}
+
+.card {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.restaurant_info {
+  display: block;
+  text-align: center;
+}
+
+.reviews {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.new {
+  width: 400px;
+  margin: 0 auto;
 }

@@ -1,12 +1,20 @@
-<h1>Restaurants</h1>
-<ul>
-<% @restaurants.each do |r| %>
-  <li class="large"><%= link_to r.name, restaurant_path(r) %></li>
-  <li><%= r.address %></li>
-  <li><%= r.phone_number %></li>
-  <li><%= r.category %></li>
-  <br>
-<% end %>
-</ul>
+<div class="restaurant_container">
+  <h1>Restaurants</h1>
 
-<%= link_to "Create new Restaurant", new_restaurant_path %>
+
+  <ul class = "list-unstyled">
+    <div class = "restaurants_list">
+      <% @restaurants.each do |r| %>
+        <div class = "card">
+          <li class="large"><%= link_to r.name, restaurant_path(r) %></li>
+          <li><%= r.address %></li>
+          <li><%= r.phone_number %></li>
+          <li><%= r.category %></li>
+          <br></div>
+      <% end %>
+   </div>
+  </ul>
+
+
+  <%= link_to "Create new Restaurant", new_restaurant_path %>
+</div>
